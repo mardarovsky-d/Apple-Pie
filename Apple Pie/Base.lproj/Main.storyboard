@@ -1,24 +1,252 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Apple_Pie" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Gfy-qM-swf">
+                                <rect key="frame" x="44" y="0.0" width="808" height="393"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tree4" translatesAutoresizingMaskIntoConstraints="NO" id="xuz-Ck-AX5">
+                                        <rect key="frame" x="0.0" y="0.0" width="404" height="393"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="PqL-s3-EPO">
+                                        <rect key="frame" x="404" y="0.0" width="404" height="393"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="NhV-qT-A7D">
+                                                <rect key="frame" x="0.0" y="0.0" width="404" height="264"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="2Cg-au-Lly">
+                                                        <rect key="frame" x="0.0" y="0.0" width="404" height="88"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FjO-Tn-bGu">
+                                                                <rect key="frame" x="0.0" y="0.0" width="31" height="88"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                <state key="normal" title="Й"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddm-eP-ysR">
+                                                                <rect key="frame" x="31" y="0.0" width="31" height="88"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                <state key="normal" title="Ц"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j90-93-Lx6">
+                                                                <rect key="frame" x="62" y="0.0" width="31" height="88"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                <state key="normal" title="У"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6C-KY-lGs">
+                                                                <rect key="frame" x="93" y="0.0" width="31.5" height="88"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                <state key="normal" title="К"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0SC-Nb-3ux">
+                                                                <rect key="frame" x="124.5" y="0.0" width="31" height="88"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                <state key="normal" title="Е"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omr-II-asW">
+                                                                <rect key="frame" x="155.5" y="0.0" width="31" height="88"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                <state key="normal" title="Н"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4R-z4-l45">
+                                                                <rect key="frame" x="186.5" y="0.0" width="31" height="88"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                <state key="normal" title="Г"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9t9-gV-GKH">
+                                                                <rect key="frame" x="217.5" y="0.0" width="31" height="88"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                <state key="normal" title="Ш"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knG-dT-2Ev">
+                                                                <rect key="frame" x="248.5" y="0.0" width="31" height="88"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                <state key="normal" title="Щ"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WcE-uU-IFf">
+                                                                <rect key="frame" x="279.5" y="0.0" width="31.5" height="88"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                <state key="normal" title="З"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMZ-iv-fRA">
+                                                                <rect key="frame" x="311" y="0.0" width="31" height="88"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                <state key="normal" title="Х"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XvC-KU-2Jw">
+                                                                <rect key="frame" x="342" y="0.0" width="31" height="88"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                <state key="normal" title="Ъ"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BhU-4h-Oiq">
+                                                                <rect key="frame" x="373" y="0.0" width="31" height="88"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                <state key="normal" title="Ë"/>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="MOb-fa-GmN">
+                                                        <rect key="frame" x="0.0" y="88" width="404" height="88"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYY-hf-68t">
+                                                                <rect key="frame" x="0.0" y="0.0" width="36.5" height="88"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                <state key="normal" title="Ф"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r23-LX-igq">
+                                                                <rect key="frame" x="36.5" y="0.0" width="37" height="88"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                <state key="normal" title="Ы"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6J-wX-oSF">
+                                                                <rect key="frame" x="73.5" y="0.0" width="36.5" height="88"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                <state key="normal" title="В"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJq-60-h8q">
+                                                                <rect key="frame" x="110" y="0.0" width="37" height="88"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                <state key="normal" title="А"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3m-eQ-WNA">
+                                                                <rect key="frame" x="147" y="0.0" width="36.5" height="88"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                <state key="normal" title="П"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mm9-Av-hGk">
+                                                                <rect key="frame" x="183.5" y="0.0" width="37" height="88"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                <state key="normal" title="Р"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4e-r4-ITI">
+                                                                <rect key="frame" x="220.5" y="0.0" width="36.5" height="88"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                <state key="normal" title="О"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNt-XN-83d">
+                                                                <rect key="frame" x="257" y="0.0" width="37" height="88"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                <state key="normal" title="Л"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMp-9b-2RL">
+                                                                <rect key="frame" x="294" y="0.0" width="36.5" height="88"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                <state key="normal" title="Д"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kvU-wB-zEA">
+                                                                <rect key="frame" x="330.5" y="0.0" width="37" height="88"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                <state key="normal" title="Ж"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iK8-Qt-yPZ">
+                                                                <rect key="frame" x="367.5" y="0.0" width="36.5" height="88"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                <state key="normal" title="Э"/>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="eV0-4v-QLi">
+                                                        <rect key="frame" x="0.0" y="176" width="404" height="88"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afo-3h-Mcr">
+                                                                <rect key="frame" x="0.0" y="0.0" width="45" height="88"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                                <state key="normal" title="Я"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pR-WG-DMX">
+                                                                <rect key="frame" x="45" y="0.0" width="45" height="88"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                                <state key="normal" title="Ч"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ys-P7-qDz">
+                                                                <rect key="frame" x="90" y="0.0" width="44.5" height="88"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                                <state key="normal" title="С"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P58-OP-GWX">
+                                                                <rect key="frame" x="134.5" y="0.0" width="45" height="88"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                                <state key="normal" title="М"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAB-oJ-sHp">
+                                                                <rect key="frame" x="179.5" y="0.0" width="45" height="88"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                                <state key="normal" title="И"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETM-L7-Ox9">
+                                                                <rect key="frame" x="224.5" y="0.0" width="45" height="88"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                                <state key="normal" title="Т"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBU-Xn-xsa">
+                                                                <rect key="frame" x="269.5" y="0.0" width="44.5" height="88"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                                <state key="normal" title="Ь"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ada-DQ-bba">
+                                                                <rect key="frame" x="314" y="0.0" width="45" height="88"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                                <state key="normal" title="Б"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBu-7f-zxU">
+                                                                <rect key="frame" x="359" y="0.0" width="45" height="88"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                                <state key="normal" title="Ю"/>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTv-O3-Z5y">
+                                                <rect key="frame" x="0.0" y="264" width="404" height="77.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jr-Tb-4jv">
+                                                <rect key="frame" x="0.0" y="341.5" width="404" height="51.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gfy-qM-swf" secondAttribute="trailing" id="7es-3i-Bit"/>
+                            <constraint firstItem="Gfy-qM-swf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="A0D-IA-2X9"/>
+                            <constraint firstItem="Gfy-qM-swf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DMV-7P-7vD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Gfy-qM-swf" secondAttribute="bottom" id="oOX-VN-RBd"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="72.991071428571431"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tree4" width="595" height="842"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
