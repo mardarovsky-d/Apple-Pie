@@ -5,6 +5,8 @@
 //  Created by Дмитрий on 05.02.2021.
 //
 
+import AVFoundation
+
 struct Game {
     var word: String
     var incorrectMovesRemaining: Int
@@ -35,6 +37,7 @@ struct Game {
         let lowercasedLetter = Character(letter.lowercased())
         guessedLetters.append(lowercasedLetter)
         if !word.lowercased().contains(lowercasedLetter) {
+            AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
             incorrectMovesRemaining -= 1
         }
     }
