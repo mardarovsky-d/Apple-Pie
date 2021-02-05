@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,211 +13,310 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Apple_Pie" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Gfy-qM-swf">
-                                <rect key="frame" x="44" y="0.0" width="808" height="393"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tree4" translatesAutoresizingMaskIntoConstraints="NO" id="xuz-Ck-AX5">
-                                        <rect key="frame" x="0.0" y="0.0" width="404" height="393"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="409"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="PqL-s3-EPO">
-                                        <rect key="frame" x="404" y="0.0" width="404" height="393"/>
+                                        <rect key="frame" x="0.0" y="409" width="414" height="409"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="NhV-qT-A7D">
-                                                <rect key="frame" x="0.0" y="0.0" width="404" height="264"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="275"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="2Cg-au-Lly">
-                                                        <rect key="frame" x="0.0" y="0.0" width="404" height="88"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="91.5"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FjO-Tn-bGu">
-                                                                <rect key="frame" x="0.0" y="0.0" width="31" height="88"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="32" height="91.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                 <state key="normal" title="Й"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AKt-S5-lnS"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddm-eP-ysR">
-                                                                <rect key="frame" x="31" y="0.0" width="31" height="88"/>
+                                                                <rect key="frame" x="32" y="0.0" width="31.5" height="91.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                 <state key="normal" title="Ц"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lu4-J3-zJO"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j90-93-Lx6">
-                                                                <rect key="frame" x="62" y="0.0" width="31" height="88"/>
+                                                                <rect key="frame" x="63.5" y="0.0" width="32" height="91.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                 <state key="normal" title="У"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xJn-yp-W0a"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6C-KY-lGs">
-                                                                <rect key="frame" x="93" y="0.0" width="31.5" height="88"/>
+                                                                <rect key="frame" x="95.5" y="0.0" width="32" height="91.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                 <state key="normal" title="К"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="obS-Cd-zCu"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0SC-Nb-3ux">
-                                                                <rect key="frame" x="124.5" y="0.0" width="31" height="88"/>
+                                                                <rect key="frame" x="127.5" y="0.0" width="31.5" height="91.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                 <state key="normal" title="Е"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rv2-iU-ug4"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omr-II-asW">
-                                                                <rect key="frame" x="155.5" y="0.0" width="31" height="88"/>
+                                                                <rect key="frame" x="159" y="0.0" width="32" height="91.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                 <state key="normal" title="Н"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xkt-Qu-iot"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4R-z4-l45">
-                                                                <rect key="frame" x="186.5" y="0.0" width="31" height="88"/>
+                                                                <rect key="frame" x="191" y="0.0" width="32" height="91.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                 <state key="normal" title="Г"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ShL-9L-AbG"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9t9-gV-GKH">
-                                                                <rect key="frame" x="217.5" y="0.0" width="31" height="88"/>
+                                                                <rect key="frame" x="223" y="0.0" width="32" height="91.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                 <state key="normal" title="Ш"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ke6-60-iI8"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knG-dT-2Ev">
-                                                                <rect key="frame" x="248.5" y="0.0" width="31" height="88"/>
+                                                                <rect key="frame" x="255" y="0.0" width="31.5" height="91.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                 <state key="normal" title="Щ"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XXr-Xx-YAo"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WcE-uU-IFf">
-                                                                <rect key="frame" x="279.5" y="0.0" width="31.5" height="88"/>
+                                                                <rect key="frame" x="286.5" y="0.0" width="32" height="91.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                 <state key="normal" title="З"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="osL-e6-9BS"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMZ-iv-fRA">
-                                                                <rect key="frame" x="311" y="0.0" width="31" height="88"/>
+                                                                <rect key="frame" x="318.5" y="0.0" width="32" height="91.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                 <state key="normal" title="Х"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="62R-nc-dD5"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XvC-KU-2Jw">
-                                                                <rect key="frame" x="342" y="0.0" width="31" height="88"/>
+                                                                <rect key="frame" x="350.5" y="0.0" width="31.5" height="91.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                 <state key="normal" title="Ъ"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EAL-2Y-AgV"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BhU-4h-Oiq">
-                                                                <rect key="frame" x="373" y="0.0" width="31" height="88"/>
+                                                                <rect key="frame" x="382" y="0.0" width="32" height="91.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                 <state key="normal" title="Ë"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z53-0Z-Qvo"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="MOb-fa-GmN">
-                                                        <rect key="frame" x="0.0" y="88" width="404" height="88"/>
+                                                        <rect key="frame" x="0.0" y="91.5" width="414" height="92"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYY-hf-68t">
-                                                                <rect key="frame" x="0.0" y="0.0" width="36.5" height="88"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="37.5" height="92"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                 <state key="normal" title="Ф"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z2j-9H-HBd"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r23-LX-igq">
-                                                                <rect key="frame" x="36.5" y="0.0" width="37" height="88"/>
+                                                                <rect key="frame" x="37.5" y="0.0" width="38" height="92"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                 <state key="normal" title="Ы"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mv2-v3-SFJ"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6J-wX-oSF">
-                                                                <rect key="frame" x="73.5" y="0.0" width="36.5" height="88"/>
+                                                                <rect key="frame" x="75.5" y="0.0" width="37.5" height="92"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                 <state key="normal" title="В"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BFQ-Et-mNd"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJq-60-h8q">
-                                                                <rect key="frame" x="110" y="0.0" width="37" height="88"/>
+                                                                <rect key="frame" x="113" y="0.0" width="37.5" height="92"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                 <state key="normal" title="А"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ve6-Ow-gRe"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3m-eQ-WNA">
-                                                                <rect key="frame" x="147" y="0.0" width="36.5" height="88"/>
+                                                                <rect key="frame" x="150.5" y="0.0" width="37.5" height="92"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                 <state key="normal" title="П"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AUK-iG-wE0"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mm9-Av-hGk">
-                                                                <rect key="frame" x="183.5" y="0.0" width="37" height="88"/>
+                                                                <rect key="frame" x="188" y="0.0" width="38" height="92"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                 <state key="normal" title="Р"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eDz-sH-yM2"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4e-r4-ITI">
-                                                                <rect key="frame" x="220.5" y="0.0" width="36.5" height="88"/>
+                                                                <rect key="frame" x="226" y="0.0" width="37.5" height="92"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                 <state key="normal" title="О"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a0y-1c-jju"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNt-XN-83d">
-                                                                <rect key="frame" x="257" y="0.0" width="37" height="88"/>
+                                                                <rect key="frame" x="263.5" y="0.0" width="37.5" height="92"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                 <state key="normal" title="Л"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JIe-8p-aVn"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMp-9b-2RL">
-                                                                <rect key="frame" x="294" y="0.0" width="36.5" height="88"/>
+                                                                <rect key="frame" x="301" y="0.0" width="37.5" height="92"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                 <state key="normal" title="Д"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hts-a2-QnY"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kvU-wB-zEA">
-                                                                <rect key="frame" x="330.5" y="0.0" width="37" height="88"/>
+                                                                <rect key="frame" x="338.5" y="0.0" width="38" height="92"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                 <state key="normal" title="Ж"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gHa-FD-hYT"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iK8-Qt-yPZ">
-                                                                <rect key="frame" x="367.5" y="0.0" width="36.5" height="88"/>
+                                                                <rect key="frame" x="376.5" y="0.0" width="37.5" height="92"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                 <state key="normal" title="Э"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gnW-Ix-IXz"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="eV0-4v-QLi">
-                                                        <rect key="frame" x="0.0" y="176" width="404" height="88"/>
+                                                        <rect key="frame" x="0.0" y="183.5" width="414" height="91.5"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afo-3h-Mcr">
-                                                                <rect key="frame" x="0.0" y="0.0" width="45" height="88"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="46" height="91.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                                 <state key="normal" title="Я"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cTh-Si-HQo"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pR-WG-DMX">
-                                                                <rect key="frame" x="45" y="0.0" width="45" height="88"/>
+                                                                <rect key="frame" x="46" y="0.0" width="46" height="91.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                                 <state key="normal" title="Ч"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VLU-tI-uVy"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ys-P7-qDz">
-                                                                <rect key="frame" x="90" y="0.0" width="44.5" height="88"/>
+                                                                <rect key="frame" x="92" y="0.0" width="46" height="91.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                                 <state key="normal" title="С"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bho-yO-foO"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P58-OP-GWX">
-                                                                <rect key="frame" x="134.5" y="0.0" width="45" height="88"/>
+                                                                <rect key="frame" x="138" y="0.0" width="46" height="91.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                                 <state key="normal" title="М"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rkE-Px-esx"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAB-oJ-sHp">
-                                                                <rect key="frame" x="179.5" y="0.0" width="45" height="88"/>
+                                                                <rect key="frame" x="184" y="0.0" width="46" height="91.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                                 <state key="normal" title="И"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="esd-aF-t0O"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETM-L7-Ox9">
-                                                                <rect key="frame" x="224.5" y="0.0" width="45" height="88"/>
+                                                                <rect key="frame" x="230" y="0.0" width="46" height="91.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                                 <state key="normal" title="Т"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3x1-sR-j3z"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBU-Xn-xsa">
-                                                                <rect key="frame" x="269.5" y="0.0" width="44.5" height="88"/>
+                                                                <rect key="frame" x="276" y="0.0" width="46" height="91.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                                 <state key="normal" title="Ь"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kvu-m2-Pm1"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ada-DQ-bba">
-                                                                <rect key="frame" x="314" y="0.0" width="45" height="88"/>
+                                                                <rect key="frame" x="322" y="0.0" width="46" height="91.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                                 <state key="normal" title="Б"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tMf-Ee-MK3"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBu-7f-zxU">
-                                                                <rect key="frame" x="359" y="0.0" width="45" height="88"/>
+                                                                <rect key="frame" x="368" y="0.0" width="46" height="91.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                                 <state key="normal" title="Ю"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Qf-TB-5m0"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTv-O3-Z5y">
-                                                <rect key="frame" x="0.0" y="264" width="404" height="77.5"/>
+                                                <rect key="frame" x="0.0" y="275" width="414" height="80.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jr-Tb-4jv">
-                                                <rect key="frame" x="0.0" y="341.5" width="404" height="51.5"/>
+                                                <rect key="frame" x="0.0" y="355.5" width="414" height="53.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -237,6 +336,44 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Gfy-qM-swf" secondAttribute="bottom" id="oOX-VN-RBd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="correctWordLabel" destination="OTv-O3-Z5y" id="Rlv-Ao-OCl"/>
+                        <outlet property="scoreLabel" destination="7jr-Tb-4jv" id="Dyw-Og-BWu"/>
+                        <outlet property="treeImageView" destination="xuz-Ck-AX5" id="0NG-sY-90o"/>
+                        <outletCollection property="letterButtons" destination="FjO-Tn-bGu" collectionClass="NSMutableArray" id="hNm-tH-BX5"/>
+                        <outletCollection property="letterButtons" destination="ddm-eP-ysR" collectionClass="NSMutableArray" id="u2F-Tn-tbS"/>
+                        <outletCollection property="letterButtons" destination="j90-93-Lx6" collectionClass="NSMutableArray" id="eXf-Ue-9Pb"/>
+                        <outletCollection property="letterButtons" destination="L6C-KY-lGs" collectionClass="NSMutableArray" id="Hmf-3j-Hb8"/>
+                        <outletCollection property="letterButtons" destination="0SC-Nb-3ux" collectionClass="NSMutableArray" id="NJe-b9-uVS"/>
+                        <outletCollection property="letterButtons" destination="omr-II-asW" collectionClass="NSMutableArray" id="tKt-AJ-9Oi"/>
+                        <outletCollection property="letterButtons" destination="v4R-z4-l45" collectionClass="NSMutableArray" id="XUa-p3-xLN"/>
+                        <outletCollection property="letterButtons" destination="9t9-gV-GKH" collectionClass="NSMutableArray" id="z7C-E7-uAI"/>
+                        <outletCollection property="letterButtons" destination="knG-dT-2Ev" collectionClass="NSMutableArray" id="Cxk-Ed-bN0"/>
+                        <outletCollection property="letterButtons" destination="WcE-uU-IFf" collectionClass="NSMutableArray" id="bj2-ll-Tse"/>
+                        <outletCollection property="letterButtons" destination="GMZ-iv-fRA" collectionClass="NSMutableArray" id="6oa-7g-EkB"/>
+                        <outletCollection property="letterButtons" destination="XvC-KU-2Jw" collectionClass="NSMutableArray" id="n0g-R6-5vU"/>
+                        <outletCollection property="letterButtons" destination="BhU-4h-Oiq" collectionClass="NSMutableArray" id="DaP-gh-C3e"/>
+                        <outletCollection property="letterButtons" destination="RYY-hf-68t" collectionClass="NSMutableArray" id="dCY-mu-fS7"/>
+                        <outletCollection property="letterButtons" destination="r23-LX-igq" collectionClass="NSMutableArray" id="GhE-Tu-4Ww"/>
+                        <outletCollection property="letterButtons" destination="Q6J-wX-oSF" collectionClass="NSMutableArray" id="vhV-i6-uBN"/>
+                        <outletCollection property="letterButtons" destination="vJq-60-h8q" collectionClass="NSMutableArray" id="ldk-5d-OyO"/>
+                        <outletCollection property="letterButtons" destination="h3m-eQ-WNA" collectionClass="NSMutableArray" id="zSC-3l-5Q6"/>
+                        <outletCollection property="letterButtons" destination="mm9-Av-hGk" collectionClass="NSMutableArray" id="YD5-R8-k6p"/>
+                        <outletCollection property="letterButtons" destination="s4e-r4-ITI" collectionClass="NSMutableArray" id="w4b-uw-ntE"/>
+                        <outletCollection property="letterButtons" destination="eNt-XN-83d" collectionClass="NSMutableArray" id="0zy-ZY-aTM"/>
+                        <outletCollection property="letterButtons" destination="KMp-9b-2RL" collectionClass="NSMutableArray" id="yZ0-1Q-HBP"/>
+                        <outletCollection property="letterButtons" destination="kvU-wB-zEA" collectionClass="NSMutableArray" id="8NJ-dA-805"/>
+                        <outletCollection property="letterButtons" destination="iK8-Qt-yPZ" collectionClass="NSMutableArray" id="YfF-lu-V3v"/>
+                        <outletCollection property="letterButtons" destination="afo-3h-Mcr" collectionClass="NSMutableArray" id="lba-Gz-fOb"/>
+                        <outletCollection property="letterButtons" destination="8pR-WG-DMX" collectionClass="NSMutableArray" id="Up2-LW-J1n"/>
+                        <outletCollection property="letterButtons" destination="6Ys-P7-qDz" collectionClass="NSMutableArray" id="AxZ-Zz-lJx"/>
+                        <outletCollection property="letterButtons" destination="P58-OP-GWX" collectionClass="NSMutableArray" id="qzo-NK-GvC"/>
+                        <outletCollection property="letterButtons" destination="FAB-oJ-sHp" collectionClass="NSMutableArray" id="dQn-t5-EKW"/>
+                        <outletCollection property="letterButtons" destination="ETM-L7-Ox9" collectionClass="NSMutableArray" id="nLa-bS-aei"/>
+                        <outletCollection property="letterButtons" destination="dBU-Xn-xsa" collectionClass="NSMutableArray" id="njL-ol-jC6"/>
+                        <outletCollection property="letterButtons" destination="ada-DQ-bba" collectionClass="NSMutableArray" id="Ctg-hL-mFJ"/>
+                        <outletCollection property="letterButtons" destination="tBu-7f-zxU" collectionClass="NSMutableArray" id="WUT-gw-XZR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -13,6 +13,7 @@
 		0AA2B63B25C7702D0061E0AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AA2B63925C7702D0061E0AA /* Main.storyboard */; };
 		0AA2B63D25C770310061E0AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AA2B63C25C770310061E0AA /* Assets.xcassets */; };
 		0AA2B64025C770310061E0AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AA2B63E25C770310061E0AA /* LaunchScreen.storyboard */; };
+		0AB50E2525CD8EDC004874A5 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB50E2425CD8EDC004874A5 /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0AA2B63C25C770310061E0AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AA2B63F25C770310061E0AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0AA2B64125C770310061E0AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AB50E2425CD8EDC004874A5 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				0AA2B63325C7702D0061E0AA /* AppDelegate.swift */,
 				0AA2B63525C7702D0061E0AA /* SceneDelegate.swift */,
+				0AB50E2425CD8EDC004874A5 /* Game.swift */,
 				0AA2B63725C7702D0061E0AA /* ViewController.swift */,
 				0AA2B63925C7702D0061E0AA /* Main.storyboard */,
 				0AA2B63C25C770310061E0AA /* Assets.xcassets */,
@@ -140,6 +143,7 @@
 				0AA2B63825C7702D0061E0AA /* ViewController.swift in Sources */,
 				0AA2B63425C7702D0061E0AA /* AppDelegate.swift in Sources */,
 				0AA2B63625C7702D0061E0AA /* SceneDelegate.swift in Sources */,
+				0AB50E2525CD8EDC004874A5 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
