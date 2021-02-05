@@ -225,9 +225,10 @@ class ViewController: UIViewController {
     
     func updateUI() {
         let movesRemaining = currentGame.incorrectMovesRemaining
-        let imageName = "tree\(movesRemaining < 8 ? movesRemaining : 7)"
+        let imageName = "tree\(movesRemaining < 0 ? 0 : movesRemaining < 8 ? movesRemaining : 7)"
         treeImageView.image = UIImage(named: imageName)
         scoreLabel.text = "Выигрыши: \(totalWins). Проигрыши: \(totalLosses)"
+        correctWordLabel.text = currentGame.guessedWord
     }
     
     override func viewDidLoad() {
@@ -238,6 +239,9 @@ class ViewController: UIViewController {
     //MARK: - IB Actions
     @IBAction func letterButtonPressed(_ sender: UIButton) {
         sender.isEnabled = false
+        let letter = sender.title(for: .normal)!
+        currentGame.playerGuessed(letter: Character(letter))
+        updateUI()
     }
     
 }
