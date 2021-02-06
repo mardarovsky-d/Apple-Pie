@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     
     //MARK: - Properties
     var currentGame: Game!
-    var capitalList = [
+    var capitalList = [ // список слов
         "Абу-Даби",
         "Абуджа",
         "Аддис-Абеба",
@@ -211,30 +211,29 @@ class ViewController: UIViewController {
         "Ямусукро",
         "Яунде",
     ].shuffled()
-    let incorrectMovesAllowed = 7
-    var totalLosses = 0 {
+    let incorrectMovesAllowed = 7 // изначальное число попыток
+    var totalLosses = 0 { // изначальное число проигрышей
         didSet {
-            showLoseAlert()
-            newRound()
+            showLoseAlert() // если меняется показываем всплывающее окно
+            newRound() // запускаем новый раунд
         }
     }
-    var totalWins = 0 {
+    var totalWins = 0 { // изначальное число побед
         didSet {
-            showWinAlert()
-            newRound()
+            showWinAlert() // если меняется показываем всплывающее окно
+            newRound() // запускаем новый раунд
         }
     }
     
     //MARK: - Methods
-    func enableButtons(_ enable: Bool = true) {
+    func enableButtons(_ enable: Bool = true) { // включаем или выключаем доступность кнопок с буквами
         for button in letterButtons {
             button.isEnabled = enable
         }
     }
     
-    func newRound() {
+    func newRound() { // Новый раунд
         guard !capitalList.isEmpty else {
-            //showNoWordsRemainAlert()
             updateUI()
             enableButtons(false)
             return
@@ -245,53 +244,52 @@ class ViewController: UIViewController {
         enableButtons()
     }
     
-    func showLoseAlert() {
-        let loseAlert = UIAlertController(title: "Неверно", message: "Вы не угадали. Это \(currentGame.word)", preferredStyle: .alert)
+    func showLoseAlert() { // Функция показа алерта о проигрыше
+        let loseAlert = UIAlertController(title: "😒 Неверно", message: "Вы не угадали. Это \(currentGame.word)", preferredStyle: .alert)
         loseAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         self.present(loseAlert, animated: true)
     }
     
-    func showWinAlert() {
-        let winAlert = UIAlertController(title: "Правильно!", message: "Вы угадали. Это \(currentGame.word)!", preferredStyle: .alert)
+    func showWinAlert() { // Функция показа алерта о выигрыше
+        let winAlert = UIAlertController(title: "😀 Правильно!", message: "Вы угадали. Это \(currentGame.word)!", preferredStyle: .alert)
         winAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         self.present(winAlert, animated: true)
     }
     
-    func updateCorrectWordLabel() {
-        var updatedWord = [String]()
-        for updatedLetter in currentGame.guessedWord {
+    func updateCorrectWordLabel() { // Добавляем пробелы в отображаемое слово
+        var updatedWord = [String]() // создаём пустую коллекцию
+        for updatedLetter in currentGame.guessedWord { // добавляем буквы из искомого слова в коллекцию
             updatedWord.append(String(updatedLetter))
         }
-        correctWordLabel.text = updatedWord.joined(separator: " ")
+        correctWordLabel.text = updatedWord.joined(separator: " ") // соединяем в слово, после каждого символа - пробел
     }
     
-    func updateState() {
-        if currentGame.incorrectMovesRemaining < 1 {
-            totalLosses += 1
-        } else if currentGame.guessedWord == currentGame.word {
-            totalWins += 1
+    func updateState() { // обновляем состояние
+        if currentGame.incorrectMovesRemaining < 1 { // если попыток меньше 1
+            totalLosses += 1 // увеличиваем число проигрышей
+        } else if currentGame.guessedWord == currentGame.word { // если угадываемое слово найдено
+            totalWins += 1 // увеличиваем число побед
         } else {
-            updateUI()
+            updateUI() // или продолжаем играть
         }
-        
         updateUI()
     }
     
-    func updateUI() {
-        let movesRemaining = currentGame.incorrectMovesRemaining
-        let imageName = "tree\(movesRemaining < 0 ? 0 : movesRemaining < 8 ? movesRemaining : 7)"
+    func updateUI() { // обновляем интерфейс
+        let movesRemaining = currentGame.incorrectMovesRemaining // осталось неверных попыток
+        let imageName = "tree\(movesRemaining < 0 ? 0 : movesRemaining < 8 ? movesRemaining : 7)" // меняем дерево в зависимости от количества попыток
         treeImageView.image = UIImage(named: imageName)
-        scoreLabel.text = "Выигрыши: \(totalWins). Проигрыши: \(totalLosses)"
-        updateCorrectWordLabel()
+        scoreLabel.text = "Выигрыши: \(totalWins). Проигрыши: \(totalLosses)" // отображаем число проигрышей и выигрышей
+        updateCorrectWordLabel() // обновляем слово на экране
     }
     
-    override func viewDidLoad() {
+    override func viewDidLoad() { // при загрузке Вью
         super.viewDidLoad()
-        newRound()
+        newRound() // запускаем раунд
     }
 
     //MARK: - IB Actions
-    @IBAction func letterButtonPressed(_ sender: UIButton) {
+    @IBAction func letterButtonPressed(_ sender: UIButton) { // определяем, какая буква нажата
         sender.isEnabled = false
         let letter = sender.title(for: .normal)!
         currentGame.playerGuessed(letter: Character(letter))
