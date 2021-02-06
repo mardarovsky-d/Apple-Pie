@@ -14,6 +14,10 @@
 		0AA2B63D25C770310061E0AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AA2B63C25C770310061E0AA /* Assets.xcassets */; };
 		0AA2B64025C770310061E0AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AA2B63E25C770310061E0AA /* LaunchScreen.storyboard */; };
 		0AB50E2525CD8EDC004874A5 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB50E2425CD8EDC004874A5 /* Game.swift */; };
+		0AD55C0025CF1B2800FFAD11 /* Screenshot04.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AD55BFC25CF1B2800FFAD11 /* Screenshot04.png */; };
+		0AD55C0125CF1B2800FFAD11 /* Screenshot02.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AD55BFD25CF1B2800FFAD11 /* Screenshot02.png */; };
+		0AD55C0225CF1B2800FFAD11 /* Screenshot03.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AD55BFE25CF1B2800FFAD11 /* Screenshot03.png */; };
+		0AD55C0325CF1B2800FFAD11 /* Screenshot01.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AD55BFF25CF1B2800FFAD11 /* Screenshot01.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		0AA2B63F25C770310061E0AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0AA2B64125C770310061E0AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AB50E2425CD8EDC004874A5 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		0AD55BFC25CF1B2800FFAD11 /* Screenshot04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot04.png; sourceTree = "<group>"; };
+		0AD55BFD25CF1B2800FFAD11 /* Screenshot02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot02.png; sourceTree = "<group>"; };
+		0AD55BFE25CF1B2800FFAD11 /* Screenshot03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot03.png; sourceTree = "<group>"; };
+		0AD55BFF25CF1B2800FFAD11 /* Screenshot01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot01.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,9 +79,21 @@
 			path = "Apple Pie";
 			sourceTree = "<group>";
 		};
+		0AD55BFB25CF1B2800FFAD11 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				0AD55BFC25CF1B2800FFAD11 /* Screenshot04.png */,
+				0AD55BFD25CF1B2800FFAD11 /* Screenshot02.png */,
+				0AD55BFE25CF1B2800FFAD11 /* Screenshot03.png */,
+				0AD55BFF25CF1B2800FFAD11 /* Screenshot01.png */,
+			);
+			name = Screenshots;
+			sourceTree = "<group>";
+		};
 		0AF9AA1B25CDFBC4003265C6 /* Screenshots */ = {
 			isa = PBXGroup;
 			children = (
+				0AD55BFB25CF1B2800FFAD11 /* Screenshots */,
 			);
 			path = Screenshots;
 			sourceTree = "<group>";
@@ -136,7 +156,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AA2B64025C770310061E0AA /* LaunchScreen.storyboard in Resources */,
+				0AD55C0025CF1B2800FFAD11 /* Screenshot04.png in Resources */,
+				0AD55C0225CF1B2800FFAD11 /* Screenshot03.png in Resources */,
+				0AD55C0325CF1B2800FFAD11 /* Screenshot01.png in Resources */,
 				0AA2B63D25C770310061E0AA /* Assets.xcassets in Resources */,
+				0AD55C0125CF1B2800FFAD11 /* Screenshot02.png in Resources */,
 				0AA2B63B25C7702D0061E0AA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
